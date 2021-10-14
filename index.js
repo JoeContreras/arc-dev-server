@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const path = require("path");
 const contactRouter = require("./src/routes/Contact");
 const estimateRouter = require("./src/routes/Estimate");
@@ -9,9 +10,23 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use("/project", require("./src/routes/Project"));
 app.use(contactRouter);
 app.use(estimateRouter);
 
+//Mongo connection
+const URI = process.env.MONGODB_URL;
+mongoose.connect(
+  URI,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err) => {
+    if (err) throw err;
+    console.log(`Connected to MongoDB`);
+  }
+);
 /*
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
