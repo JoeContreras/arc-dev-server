@@ -42,6 +42,11 @@ const projectSchema = new mongoose.Schema(
       trim: true,
       type: String,
     },
+    search: {
+      required: true,
+      type: Boolean,
+      default: true,
+    },
     /*
     owner: {
       type: mongoose.Schema.Types.ObjectId,
