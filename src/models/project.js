@@ -35,12 +35,12 @@ const projectSchema = new mongoose.Schema(
     platforms: {
       required: true,
       trim: true,
-      type: [String],
+      type: String,
     },
     features: {
       required: true,
       trim: true,
-      type: [String],
+      type: String,
     },
     /*
     owner: {
