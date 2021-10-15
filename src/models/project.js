@@ -10,7 +10,7 @@ const projectSchema = new mongoose.Schema(
     date: {
       required: true,
       trim: true,
-      type: Date,
+      type: String,
     },
     total: {
       required: true,
