@@ -9,6 +9,6 @@ router.get("/fetchMany", ProjectCtrl.fetchMany);
 
 router.get("/fetchOne/:id", ProjectCtrl.fetchOne);
 
-router.delete("/delete/:id", ProjectCtrl.delete);
+router.delete("/delete/", ProjectCtrl.delete);
 
 module.exports = router;

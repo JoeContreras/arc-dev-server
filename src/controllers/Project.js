@@ -23,9 +23,12 @@ const ProjectCtrl = {
     }
   },
   delete: async (req, res) => {
+    const { name, service, total } = req.body;
     try {
       const project = await Project.findOneAndDelete({
-        _id: req.params.id,
+        name: name,
+        service: service,
+        total: total,
       });
       if (!project) {
         res.status(404).json({ msg: "That project does not exist." });
