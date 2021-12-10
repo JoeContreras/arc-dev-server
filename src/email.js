@@ -6,7 +6,7 @@ const sendEmail = (name, email, phone, message) => {
   sgMail.send({
     to: "joe.contreras809@gmail.com",
     from: "joe.contreras809@gmail.com",
-    subject: "Arc Development",
+    subject: "Amp Development",
     text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}`,
   });
 };

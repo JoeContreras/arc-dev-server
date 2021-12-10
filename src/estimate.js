@@ -20,7 +20,7 @@ const receivedEstimate = (
       sgMail.send({
         to: "contreras.joe908@gmail.com",
         from: "joe.contreras809@gmail.com",
-        subject: "Arc Development Estimate",
+        subject: "Amp Development Estimate",
         text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}.
     The estimate is ${total}, for a ${category} ${service}.
     `,
@@ -29,7 +29,7 @@ const receivedEstimate = (
       sgMail.send({
         to: "contreras.joe908@gmail.com",
         from: "joe.contreras809@gmail.com",
-        subject: "Arc Development Estimate",
+        subject: "Amp Development Estimate",
         text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}.
     The estimate is ${total}, for ${service}, ${platforms}, with ${features}, ${customFeatures} for around ${users} users.
     `,
