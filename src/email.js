@@ -319,17 +319,14 @@ const sendConfirmationEmail = (email, name) => {
                                                                                 align="center"
                                                                                 style="font-family: 'Pacifico', Tahoma; font-size:34.28px; font-weight:normal; line-height:35px; color:#fff; text-align:center;"
                                                                         >
-                                                                            Hello
+                                                                            Hola
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td
                                                                                 align="center"
                                                                                 style="padding:20px 0px 0px 0px; font-family: 'Roboto', Tahoma, Segoe, sans-serif; font-size:20px; font-weight:normal; line-height:25.50px; color:#fff; text-align:center;"
-                                                                        >
-                                                                            Thanks for sending us a message! We’ll
-                                                                            get back to you as soon as possible.
-                                                                        </td>
+                                                                        >Gracias por enviarnos un mensaje. Nos pondremos en contacto con usted lo antes posible.</td>
                                                                     </tr>
                                                                 </table>
                                                             </td>
