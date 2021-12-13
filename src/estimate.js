@@ -20,18 +20,18 @@ const receivedEstimate = (
       sgMail.send({
         to: "contreras.joe908@gmail.com",
         from: "joe.contreras809@gmail.com",
-        subject: "Amp Development Estimate",
-        text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}.
-    The estimate is ${total}, for a ${category} ${service}.
+        subject: "Estimado Amp Development",
+        text: `Mi nombre es ${name}. Póngase en contacto conmigo por correo electrónico en ${email}, o llámame a ${phone}.
+    El estimado es de ${total}, por un ${category} ${service}. Le dejo el siguiente mensaje: ${message}
     `,
       });
     } else {
       sgMail.send({
         to: "contreras.joe908@gmail.com",
         from: "joe.contreras809@gmail.com",
-        subject: "Amp Development Estimate",
-        text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}.
-    The estimate is ${total}, for ${service}, ${platforms}, with ${features}, ${customFeatures} for around ${users} users.
+        subject: "Estimado Amp Development",
+        text: `Mi nombre es ${name}. Póngase en contacto conmigo por correo electrónico en ${email}, o llámame a  ${phone}.
+    El estimado es de ${total}, por un ${service}, ${platforms}, with ${features}, ${customFeatures} for around ${users} users.  Le dejo el siguiente mensaje: ${message}
     `,
       });
     }

@@ -7,7 +7,7 @@ const sendEmail = (name, email, phone, message) => {
     to: "joe.contreras809@gmail.com",
     from: "joe.contreras809@gmail.com",
     subject: "Amp Development",
-    text: `${message} My name is ${name}. Please contact me via email at ${email}, or call me at ${phone}`,
+    text: `Hola mi nombre es ${name}. Póngase en contacto conmigo por correo electrónico en ${email}o llámame a ${phone}. Le dejo el siguiente mensaje: ${message} `,
   });
 };
 
@@ -15,7 +15,7 @@ const sendConfirmationEmail = (email, name) => {
   sgMail.send({
     to: email,
     from: "joe.contreras809@gmail.com",
-    subject: "We have received your message",
+    subject: "Hemos recibido su mensaje",
     html: `
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html
